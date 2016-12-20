@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contador do Reveillon</title>
+
+    <link href="count.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<script>
+    CountDownTimer('01/01/2017 12:00 AM', 'countdown');
+    CountDownTimer('12/25/2016 12:00 AM', 'newcountdown');
+
+    function CountDownTimer(dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = days + 'dias ';
+            document.getElementById(id).innerHTML += hours + 'horas ';
+            document.getElementById(id).innerHTML += minutes + 'minutos ';
+            document.getElementById(id).innerHTML += seconds + 'segundos';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+
+</script>
+
+  Faltam<br>
+  <div id="countdown"></div>
+  Para o Reveillon<br>
+
+  <hr>
+
+  Faltam<br>
+  <div id="newcountdown"></div>
+  Para o Natal<br>
+
+  </body>
+</html>
