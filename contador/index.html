@@ -32,6 +32,7 @@
                   clearInterval(timer);
                   document.getElementById(id).innerHTML = 'FELIZ ANO NOVO GALEREE!!';
 
+
                   return;
               }
               var days = Math.floor(distance / _day);
@@ -43,6 +44,7 @@
               document.getElementById(id).innerHTML += hours + ' horas ';
               document.getElementById(id).innerHTML += minutes + ' minutos ';
               document.getElementById(id).innerHTML += seconds + ' segundos';
+
           }
 
           timer = setInterval(showRemaining, 1000);
@@ -51,7 +53,7 @@
   </script>
 
   <div id="gradient">
-    <p>Faltam</p>
+    <p id="el">Faltam</p>
     <div id="countdown"></div>
   </div>
 
