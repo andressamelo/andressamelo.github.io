@@ -9,6 +9,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+a {
+  color: #02aec8;
+}
 h1 {
 	font-size: 2.6em;
 }
@@ -21,7 +24,13 @@ ul {
 	margin: 2em 0;
 	font-size: 0.9em;
 }
-
+mark {
+    background-color: #ffde00;
+    padding: 1px 4px 4px;
+}
+footer {
+  margin-top: 40px;
+}
 /* 
 div {
     width: 160px;
