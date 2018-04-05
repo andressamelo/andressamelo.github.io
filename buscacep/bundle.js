@@ -23179,7 +23179,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var MapWithControlledZoom = (0, _recompose.compose)((0, _recompose.withProps)({
-	  googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+	  googleMapURL: "https://maps.googleapis.com/maps/api/js?client=&key=AIzaSyCvGoupM4jZwatsNgG7rfjirW4LHkUDKv4&callback=initMap&v=3.exp&libraries=geometry,drawing,places",
 	  loadingElement: _react2.default.createElement("div", { style: { height: "100%" } }),
 	  containerElement: _react2.default.createElement("div", { style: { height: "300px" } }),
 	  mapElement: _react2.default.createElement("div", { style: { height: "100%" } })
