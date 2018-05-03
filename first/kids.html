@@ -142,7 +142,7 @@
 
              <div class="intern kids">
 
-               <ul class="nav submenu fixed-top">
+               <ul class="nav submenu">
                  <li class="nav-item franqueado">
                    <a class="nav-link" href="#">Portal do Franqueado</a>
                  </li>
@@ -158,7 +158,7 @@
                      <h3>Inglês voltado exclusivamente para <span>crianças de 4 a 10 anos</span> com duração de 12 meses por módulo.</h3>
                      <p>O curso permite que o aluno desenvolva o aprendizado do idioma com um metodo lúdico que garante a motivação e a assimilação através de atividades práticas como: jogos, brincadeiras, passeios, teatros e eventos; inserindo o inglês gradativamente na vida dos alunos.</p>
 
-                     <button type="button" class="btn btn-primary">Matricule-se</button>
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showContact">Matricule-se</button>
                      <button type="button" class="btn btn-link">Teste seu nível</button>
                    </div>
                    <div class="col-md-3 d-none d-sm-block">
@@ -236,6 +236,72 @@
 
            </div>
          </div>
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="showContact" tabindex="-1" role="dialog" aria-labelledby="EntrarEmContato" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        
+        <div class="modal-content modal-lg">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <h5 class="modal-title text-center">Vamos Conversar?</h5>
+            <p class="intro text-center">Preencha os campos abaixo e em breve entraremos em contato.</p>
+
+             <form>
+
+               <div class="form-group">
+                 <label for="name">Seu Nome*</label>
+                 <input type="text" class="form-control" id="name" placeholder="Insira seu nome completo">
+               </div>
+               <div class="form-group">
+                 <label for="email">Seu Email*</label>
+                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+                 <small id="emailHelp" class="form-text text-muted">Nós não lhe enviaremos propagandas indesejadas!</small>
+               </div>
+               <div class="row">
+                 <div class="col-2 form-group">
+                   <label for="estado">Estado</label>
+                   <input type="text" class="form-control" id="estado" placeholder="UF">
+                 </div>
+                 <div class="col-4 form-group">
+                   <label for="cidade">Cidade</label>
+                   <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                 </div>
+                 <div class="col-6 form-group">
+                   <label for="bairro">Bairro</label>
+                   <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label for="unidade">Unidade</label>
+                 <select class="form-control" id="unidade">
+                   <option>Selecione uma unidade</option>
+                   <option>Sorocaba Centro</option>
+                   <option>Sorocaba Zona Norte</option>
+                   <option>Tatuí</option>
+                   <option>Boituva</option>
+                   <option>Itaquaquecetuba</option>
+                   <option>Cerquilho</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                 <label for="exampleTextarea">Mensagem</label>
+                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+               </div>
+
+               <button type="submit" class="btn btn-primary">Enviar</button>
+             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal Contact -->
 
     <script src="assets/js/main.min.js"></script>
   </body>
